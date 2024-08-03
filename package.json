@@ -1,11 +1,12 @@
 {
   "name": "rounded-cycle-timeline-react",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "rounded-cycle-timeline-react React TypeScript package",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && npm run copy-css",
+    "copy-css": "copyfiles -u 1 src/**/*.css lib",
     "test": "jest"
   },
   "keywords": [
@@ -26,7 +27,8 @@
     "jest": "^27.4.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "typescript": "^4.8.4"
+    "typescript": "^4.8.4",
+    "copyfiles": "^2.4.1"
   },
   "peerDependencies": {
     "react": ">=16.8.0",

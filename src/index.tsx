@@ -1,8 +1,8 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
+import './App.css';
 import React from "react";
 import { lazy, useEffect, useRef } from "react";
 import { twMerge } from "tailwind-merge";
-import "./App.css"
+
 const Avatar = lazy(() => import('./AvatarC/Avatar'));
 
 const member = [1, 2, 3, 4, 5, 6, 7, 8, 9, 99];
@@ -54,29 +54,29 @@ export default function CyrcleTimeLine<T>({
   }, [rotate, duration, arrayData?.length]);
 
   return (
-      <div className={twMerge(`relative-container`, relativeContainerClasss)}>
-        <div className={twMerge(`inner-circle`, innerCyrcleClasss)}>
-          {arrayData?.map((item, index) => {
-            const avatarParentRotate = (360 / memberCount) * index;
-            const avatarRotate = avatarParentRotate >= 20 ? -avatarParentRotate : 0;
+    <div className={twMerge(`relative-container`, relativeContainerClasss)}>
+      <div className={twMerge(`inner-circle`, innerCyrcleClasss)}>
+        {arrayData?.map((item, index) => {
+          const avatarParentRotate = (360 / memberCount) * index;
+          const avatarRotate = avatarParentRotate >= 20 ? -avatarParentRotate : 0;
 
-            return (
+          return (
+            <div
+              key={index}
+              ref={(el) => (avatarParentRefs.current[index] = el)}
+              className="avatar-parent"
+              style={{ transform: `rotate(${avatarParentRotate}deg)` }}>
               <div
-                key={index}
-                ref={(el) => (avatarParentRefs.current[index] = el)}
-                className="avatar-parent"
-                style={{ transform: `rotate(${avatarParentRotate}deg)` }}>
-                <div
-                  ref={(el) => (avatarContainerRefs.current[index] = el)}
-                  className={twMerge(`avatar-container`, avatarContainerClasss)}
-                  style={{ transform: `rotate(${avatarRotate}deg)` }}
-                >
-                  <AvatarComponentItem item={item} />
-                </div>
+                ref={(el) => (avatarContainerRefs.current[index] = el)}
+                className={twMerge(`avatar-container`, avatarContainerClasss)}
+                style={{ transform: `rotate(${avatarRotate}deg)` }}
+              >
+                <AvatarComponentItem item={item} />
               </div>
-            );
-          })}
-        </div>
+            </div>
+          );
+        })}
       </div>
+    </div>
   );
 }
