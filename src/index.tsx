@@ -53,7 +53,6 @@ export default function CyrcleTimeLine<T>({
   }, [rotate, duration, arrayData?.length]);
 
   return (
-    <div className="container">
       <div className={twMerge(`relative-container`, relativeContainerClasss)}>
         <div className={twMerge(`inner-circle`, innerCyrcleClasss)}>
           {arrayData?.map((item, index) => {
@@ -78,6 +77,5 @@ export default function CyrcleTimeLine<T>({
           })}
         </div>
       </div>
-    </div>
   );
 }
