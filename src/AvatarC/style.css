@@ -1,0 +1,10 @@
+.avatar {
+    background-color: orange; /* Tailwind's bg-sky-200 */
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
