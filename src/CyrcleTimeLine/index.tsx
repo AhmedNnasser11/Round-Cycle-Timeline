@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import React from "react";
 import { lazy, useEffect, useRef } from "react";
 import { twMerge } from "tailwind-merge";
 const Avatar = lazy(() => import('../AvatarC/Avatar'));
