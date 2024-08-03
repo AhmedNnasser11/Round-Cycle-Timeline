@@ -1,0 +1,35 @@
+{
+  "name": "rounded-cycle-timeline-react",
+  "version": "1.0.0",
+  "description": "rounded-cycle-timeline-react React TypeScript package",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "package"
+  ],
+  "author": "ahmed nasser",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AhmedNnasser11/Round-Cycle-Timeline.git"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.2",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "jest": "^27.4.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^4.8.4"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  }
+}
