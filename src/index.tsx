@@ -2,6 +2,7 @@
 import React from "react";
 import { lazy, useEffect, useRef } from "react";
 import { twMerge } from "tailwind-merge";
+import "./App.css"
 const Avatar = lazy(() => import('./AvatarC/Avatar'));
 
 const member = [1, 2, 3, 4, 5, 6, 7, 8, 9, 99];
