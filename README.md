@@ -81,6 +81,8 @@ You can find a live example of how to use this component on CodeSandbox:
 
 [CodeSandbox Example](https://codesandbox.io/p/sandbox/rounded-timeline-example-vdrnrz?file=%2Fsrc%2FApp.tsx%3A19%2C11)
 
+[My LinkedIn](https://www.linkedin.com/in/ahmed-nasser-931490212/)
+
 ## License
 
 MIT
