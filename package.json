@@ -1,6 +1,6 @@
 {
   "name": "rounded-cycle-timeline-react",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "rounded-cycle-timeline-react React TypeScript package",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -12,7 +12,21 @@
   "keywords": [
     "react",
     "typescript",
-    "package"
+    "package",
+    "next",
+    "rounded-cycle-timeline",
+    "timeline",
+    "cycle",
+    "react-component",
+    "nextjs",
+    "rounded timeline",
+    "rounded timeline component",
+    "rounded timeline component nextjs",
+    "nextjs rounded timeline",
+    "nextjs rounded timeline component",
+    "nextjs rounded timeline component nextjs",
+    "reactjs rounded timeline component nextjs",
+    "reactjs rounded timeline component nextjs"
   ],
   "author": "ahmed nasser",
   "license": "MIT",
