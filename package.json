@@ -1,6 +1,6 @@
 {
   "name": "rounded-cycle-timeline-react",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "rounded-cycle-timeline-react React TypeScript package",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
